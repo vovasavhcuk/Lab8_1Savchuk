@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <children>
+        <Pane prefHeight="112.0" prefWidth="772.0">
+            <children>
+                <TextField fx:id="txt_field_input" layoutX="35.0" layoutY="42.0" onAction="#Implementation" prefHeight="56.0" prefWidth="510.0">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="4.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите существительное + глагол в прошедшем времени + наречие" wrappingWidth="572.0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane prefHeight="142.0" prefWidth="580.0">
+            <children>
+                <Button fx:id="button_result" layoutX="480.0" layoutY="60.0" mnemonicParsing="false" onAction="#Implementation" text="Результат" />
+                <ChoiceBox fx:id="choice_noun" layoutX="290.0" layoutY="9.0" prefWidth="150.0" />
+                <ChoiceBox fx:id="choice_adverb" layoutX="290.0" layoutY="102.0" prefWidth="150.0" />
+                <RadioButton fx:id="check_noun" layoutX="24.0" layoutY="22.0" mnemonicParsing="false" onAction="#Implementation" text="Заменить существительное" />
+                <RadioButton fx:id="check_add" layoutX="24.0" layoutY="63.0" mnemonicParsing="false" onAction="#Implementation" text="Добавить &quot;бы&quot;" />
+                <RadioButton fx:id="check_adverb" layoutX="24.0" layoutY="106.0" mnemonicParsing="false" onAction="#Implementation" text="Заменить наречие" textFill="#363636" />
+                <Button fx:id="button_clearall" layoutX="299.0" layoutY="60.0" mnemonicParsing="false" onAction="#Implementation" text="Очистить всё" />
+            </children>
+        </Pane>
+        <Pane prefHeight="108.0" prefWidth="580.0">
+            <children>
+                <Label fx:id="lbl_output" layoutX="37.0" layoutY="100.0" prefHeight="23.0" prefWidth="510.0" textFill="BLACK">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Text layoutX="135.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Редактированный текст: ">
+                    <font>
+                        <Font name="Arial" size="27.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+    </children>
+    <padding>
+        <Insets left="20.0" />
+    </padding>
+</VBox>
